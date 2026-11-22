@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": false,
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": [
+    "@searchbarkit/web",
+    "@searchbarkit/manga-demo",
+    "@searchbarkit/pokemon-demo",
+    "@searchbarkit/library-demo",
+    "@searchbarkit/web-component-demo"
+  ]
+}

@@ -1,0 +1,26 @@
+name: Release preview (no publish)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm release:prepare
+      - name: Upload private review artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: searchbar-packages-preview
+          path: artifacts/npm-packs/*.tgz
+          if-no-files-found: error
+          retention-days: 7

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+artifacts/
+*.tsbuildinfo
+.vite/
+coverage/
+*.log
+
+# pnpm-lock.yaml must be committed for reproducible installs.
+# Never ignore pnpm-lock.yaml.
+
+# Web static build
+apps/web/dist/
+artifacts/npm-packs/

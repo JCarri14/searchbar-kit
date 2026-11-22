@@ -1,0 +1,100 @@
+.gsb{
+--_gs-bg:var(--gs-bg,#101722);
+--_gs-surface:var(--gs-surface,#151e2c);
+--_gs-control:var(--gs-control,#151f2f);
+--_gs-popover:var(--gs-popover,#141e2d);
+--_gs-border:var(--gs-border,#33435d);
+--_gs-border-strong:var(--gs-border-strong,#445773);
+--_gs-text:var(--gs-text,#edf3fd);
+--_gs-muted:var(--gs-muted,#a1b2cb);
+--_gs-accent:var(--gs-accent,#3378e8);
+--_gs-accent-hover:var(--gs-accent-hover,#29426b);
+--_gs-accent-soft:var(--gs-accent-soft,#1c2e4d);
+--_gs-on-accent:var(--gs-on-accent,#ffffff);
+--_gs-focus:var(--gs-focus,#82aeff);
+--_gs-include:var(--gs-include,#2c9b81);
+--_gs-exclude:var(--gs-exclude,#b96572);
+--_gs-radius:var(--gs-radius,4px);
+--_gs-font:var(--gs-font,Inter,system-ui,Segoe UI,sans-serif);
+--_gs-padding:var(--gs-padding,18px);
+color:var(--_gs-text);background:var(--_gs-surface);border:1px solid var(--_gs-border);border-radius:var(--_gs-radius);padding:var(--_gs-padding);font:13px/1.5 var(--_gs-font)
+}
+.gsb *{box-sizing:border-box}.gsb button,.gsb input,.gsb select{font:inherit}.gsb button{cursor:pointer}.gsb button:focus-visible,.gsb input:focus-visible,.gsb select:focus-visible{outline:2px solid var(--_gs-focus);outline-offset:2px}.gsb-search-line{height:60px;display:flex;align-items:center;gap:10px;border:1px solid var(--_gs-border-strong);background:var(--_gs-bg);border-radius:var(--_gs-radius);padding:7px 8px 7px 14px;position:relative}.gsb-search-line:focus-within{border-color:#618ce0}.gsb-glass{font-size:22px;color:#91b6e9}.gsb-search-line input{min-width:0;flex:1;height:39px;background:transparent;border:0;outline:0;color:var(--_gs-text);font-size:14px}.gsb-search-line input::placeholder{color:var(--_gs-muted)}.gsb-shortcut{color:#a1b5d5;background:#1b293c;border:1px solid #40536e;border-radius:var(--_gs-radius);padding:3px 6px;font-size:11px}.gsb-search-button{background:var(--_gs-accent);border:1px solid #4c8af3;border-radius:var(--_gs-radius);color:white;padding:12px 17px;font-weight:700}.gsb-suggestions{position:absolute;left:0;right:0;top:calc(100% + 5px);z-index:50;background:var(--_gs-popover);border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);padding:5px;box-shadow:0 18px 35px #0008}.gsb-suggestions .gsb-suggestion{width:100%;display:flex;align-items:center;justify-content:flex-start;gap:12px;background:none;border:0;border-radius:var(--_gs-radius);color:var(--_gs-text);padding:9px;text-align:left}.gsb-suggestions .gsb-suggestion:hover,.gsb-suggestions .gsb-suggestion.gsb-suggestion-active{background:var(--_gs-accent-hover)}.gsb-suggestion-icon{display:grid;place-items:center;width:36px;height:36px;flex:0 0 36px;border:1px solid #405774;border-radius:var(--_gs-radius);color:#9fc1ff;background:#23324b;font-size:19px}.gsb-suggestion-copy{display:flex;flex-direction:column;gap:2px;min-width:0}.gsb-suggestion-copy strong{line-height:1.3;font-size:13px}.gsb-suggestions .gsb-suggestion-copy small{color:#9eb1d0;font-size:11px;line-height:1.35}.gsb-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:15px}.gsb-panel-button{border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);background:var(--_gs-control);color:var(--_gs-text);padding:9px 12px;font-weight:700}.gsb-panel-button.gsb-open{background:var(--_gs-accent-soft);border-color:#6695e7}.gsb-reset{margin-left:auto;background:none;border:0;color:var(--_gs-muted);padding:7px}.gsb-reset:hover{text-decoration:underline}.gsb-groups{margin-top:8px;display:flex;flex-wrap:wrap;gap:7px}.gsb-group,.gsb-expanded-item{border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);background:var(--_gs-accent-soft);color:var(--_gs-text);padding:8px 10px;display:inline-flex;align-items:center;gap:7px}.gsb-group strong{font-size:12px}.gsb-group-field{color:#b4cae9}.gsb-group:hover,.gsb-expanded-item:hover{background:var(--_gs-accent-hover)}.gsb-exclusion{color:#fc9aa4;font-weight:800}.gsb-expanded{display:inline-flex;flex-wrap:wrap;gap:5px}.gsb-expanded-item{padding:2px 3px}.gsb-expanded-item button{border:0;background:transparent;color:inherit;padding:5px 6px}.gsb-expanded-item button.gsb-negative{color:#ffb2b9}.gsb-advanced{margin-top:14px;background:var(--_gs-bg);border:1px solid var(--_gs-border);border-radius:var(--_gs-radius);padding:15px}.gsb-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.gsb-filter-field{min-width:0;position:relative}.gsb-filter-field>label{display:block;color:var(--_gs-muted);font-size:11px;letter-spacing:.04em;font-weight:700;text-transform:uppercase;margin:0 0 7px}.gsb-filter-trigger,.gsb-filter-field>select{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;height:44px;text-align:left;color:var(--_gs-text);background:var(--_gs-control);border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);padding:8px 10px}.gsb-filter-summary{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gsb-trigger-right{display:inline-flex;align-items:center;gap:7px;flex:none}.gsb-count{background:var(--_gs-accent);border-radius:var(--_gs-radius);padding:1px 6px;font-size:11px}.gsb-menu{position:absolute;top:calc(100% + 4px);left:0;min-width:min(270px,90vw);width:100%;z-index:30;padding:8px;background:var(--_gs-popover);border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);box-shadow:0 16px 30px #0009}.gsb-menu>input{width:100%;padding:9px;border-radius:var(--_gs-radius);background:var(--_gs-bg);border:1px solid var(--_gs-border-strong);color:var(--_gs-text);outline:0;margin-bottom:6px}.gsb-options{max-height:200px;overflow:auto}.gsb-option{width:100%;display:flex;align-items:center;gap:10px;background:none;border:0;border-radius:var(--_gs-radius);color:var(--_gs-text);padding:9px;text-align:left}.gsb-option:hover{background:var(--_gs-accent-hover)}.gsb-tristate{display:grid;place-items:center;flex:none;width:19px;height:19px;border:1px solid #415470;border-radius:var(--_gs-radius);color:#8397ae;font-size:12px;font-weight:800}.gsb-option.include .gsb-tristate{background:#164e42;border-color:#2a997e;color:#aff5dd}.gsb-option.exclude .gsb-tristate{background:#55242c;border-color:#b75668;color:#ffc2cb}.gsb-message{color:var(--_gs-muted);font-size:12px;padding:12px}.gsb-more,.gsb-clear-field{width:100%;padding:8px;border:0;border-top:1px solid #3c4b64;background:none;color:#bbd4ff}.gsb-rules{margin-top:12px;display:grid;gap:9px}.gsb-rule-box{border:1px solid var(--_gs-border);border-radius:var(--_gs-radius);padding:13px;background:var(--_gs-bg);border-left:3px solid var(--_gs-include)}.gsb-rule-box.gsb-excluded{border-left-color:var(--_gs-exclude)}.gsb-rule-box header{display:flex;align-items:center;gap:9px;margin-bottom:12px}.gsb-rule-icon{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:var(--_gs-radius);background:#153d35;color:#77e2c6;font-weight:800}.gsb-excluded .gsb-rule-icon{background:#49262e;color:#ffacbb}.gsb-modes{margin-left:auto;display:flex;border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);overflow:hidden}.gsb-modes button{color:var(--_gs-text);background:var(--_gs-bg);border:0;padding:8px 12px}.gsb-modes button.gsb-active{color:white;background:var(--_gs-accent)}.gsb-rule-list{display:flex;gap:7px;flex-wrap:wrap}.gsb-rule-token{display:inline-flex;align-items:center;border:1px solid var(--_gs-border-strong);background:var(--_gs-control);border-radius:var(--_gs-radius)}.gsb-rule-token:hover{border-color:#7390b7}.gsb-rule-token button{background:transparent;color:var(--_gs-text);border:0}.gsb-rule-move{padding:7px 5px 7px 9px}.gsb-rule-move small{color:#90a7c8}.gsb-rule-remove{padding:7px 9px;color:#b2c1d5!important}.gsb-rule-remove:hover{color:white!important;background:#4c2d38}.gsb-swap{display:inline-block;color:#a7bad3;opacity:0;margin-left:6px}.gsb-rule-token:hover .gsb-swap,.gsb-rule-token:focus-within .gsb-swap{opacity:1}.gsb-muted{font-size:12px;color:var(--_gs-muted)}
+@media(max-width:780px){.gsb-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gsb{padding:12px}}@media(max-width:520px){.gsb-grid{grid-template-columns:1fr}.gsb-shortcut{display:none}.gsb-reset{margin-left:0}.gsb-search-button{padding:10px}.gsb-rule-box header{flex-wrap:wrap}.gsb-modes{margin-left:0}}
+/* v1.2: shared SVG icon geometry and discrete interaction feedback */
+.gsb-panel-button,.gsb-reset,.gsb-glass,.gsb-trigger-right,.gsb-group,.gsb-rule-move,.gsb-option,.gsb-expanded-item button{align-items:center}
+.gsb-panel-button,.gsb-reset{display:inline-flex;gap:7px;align-items:center}
+.gsb-panel-button svg,.gsb-reset svg,.gsb-glass svg{flex-shrink:0}
+.gsb-option .gsb-tristate{display:inline-grid;place-items:center}
+.gsb-swap{vertical-align:middle}
+.gsb-option:focus-visible,.gsb-rule-token button:focus-visible{outline:2px solid var(--_gs-focus);outline-offset:1px}
+.gsb-rule-move:focus-visible .gsb-swap{opacity:1}
+.gsb-suggestions .gsb-suggestion:focus-visible{background:var(--_gs-accent-hover)}
+@media(prefers-reduced-motion:reduce){.gsb *, .gsb *::before,.gsb *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Filtered preset: selected chips are labels + remove action, not state toggles. */
+.gsb-expanded-item .gsb-readonly-state{display:inline-flex;align-items:center;gap:5px;padding:5px 7px;font-size:12px;color:inherit}
+.gsb-expanded-item .gsb-readonly-state.gsb-negative{color:#ea969d}
+
+/* Numeric ranges: opt-in, same visual hierarchy as select filters. */
+.gsb-range-inputs{display:flex;align-items:center;gap:6px;min-width:0}
+.gsb-range-inputs input{min-width:0;width:45%;flex:1;color:var(--_gs-text);background:var(--_gs-control);border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);height:44px;padding:8px}
+.gsb-range-inputs>span{color:var(--_gs-muted)}.gsb-range-inputs>button{flex:none;border:0;background:none;color:#b1c5e3;padding:6px}
+.gsb-range-error{display:block;color:#ffb1bd;margin-top:5px;font-size:11px}
+.gsb-range-operation{display:inline-flex;align-items:center;gap:6px;color:var(--_gs-muted);background:transparent;border:0;padding:7px 0}
+.gsb-range-chip{border:1px solid var(--_gs-border-strong);border-radius:var(--_gs-radius);background:var(--_gs-accent-soft);color:var(--_gs-text);padding:6px 8px;display:inline-flex;align-items:center;gap:8px}
+.gsb-range-chip button{background:none;border:0;color:inherit;display:inline-flex}
+
+.gsb-grid.gsb-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:520px){.gsb-grid.gsb-grid-2{grid-template-columns:1fr}}
+
+/* Stable theming API: use --gs-* variables on a parent or the component root. */
+.gsb.gsb-theme-light {
+ --_gs-bg:var(--gs-bg,#f8fafc);
+ --_gs-surface:var(--gs-surface,#ffffff);
+ --_gs-control:var(--gs-control,#f8fafc);
+ --_gs-popover:var(--gs-popover,#ffffff);
+ --_gs-border:var(--gs-border,#d5deeb);
+ --_gs-border-strong:var(--gs-border-strong,#b6c8df);
+ --_gs-text:var(--gs-text,#17283f);
+ --_gs-muted:var(--gs-muted,#566b85);
+ --_gs-accent:var(--gs-accent,#2563eb);
+ --_gs-accent-hover:var(--gs-accent-hover,#dbeafe);
+ --_gs-accent-soft:var(--gs-accent-soft,#e8f0ff);
+ --_gs-on-accent:var(--gs-on-accent,#ffffff);
+ --_gs-focus:var(--gs-focus,#2563eb);
+ --_gs-include:var(--gs-include,#168065);
+ --_gs-exclude:var(--gs-exclude,#b84250);
+}
+.gsb .gsb-search-button{background:var(--_gs-accent);color:var(--_gs-on-accent)}
+.gsb.gsb-theme-light .gsb-suggestion-icon,.gsb.gsb-theme-light .gsb-shortcut,.gsb.gsb-theme-light .gsb-group,.gsb.gsb-theme-light .gsb-expanded-item{background:var(--_gs-accent-soft);color:var(--_gs-text)}
+.gsb.gsb-theme-light .gsb-suggestions,.gsb.gsb-theme-light .gsb-menu{color:var(--_gs-text)}
+.gsb.gsb-theme-light .gsb-modes button.gsb-active{background:var(--_gs-accent);color:var(--_gs-on-accent)}
+.gsb.gsb-theme-light .gsb-option:hover,.gsb.gsb-theme-light .gsb-suggestion:hover{background:var(--_gs-accent-hover)}
+.gsb.gsb-theme-light .gsb-filter-field input,.gsb.gsb-theme-light .gsb-filter-field select,.gsb.gsb-theme-light .gsb-filter-trigger,.gsb.gsb-theme-light .gsb-search-line input,.gsb.gsb-theme-light .gsb-rule-token button{color:var(--_gs-text)}
+
+/* Light preset: state indications retain semantic colors. */
+.gsb.gsb-theme-light .gsb-glass,.gsb.gsb-theme-light .gsb-suggestion-icon,.gsb.gsb-theme-light .gsb-group-field,.gsb.gsb-theme-light .gsb-suggestion-copy small{color:var(--_gs-muted)}
+.gsb.gsb-theme-light .gsb-shortcut{border-color:var(--_gs-border);color:var(--_gs-muted)}
+.gsb.gsb-theme-light .gsb-rule-icon{background:#dcfce7;color:#166534}
+.gsb.gsb-theme-light .gsb-excluded .gsb-rule-icon{background:#ffe4e6;color:#9f1239}
+.gsb.gsb-theme-light .gsb-count{color:var(--_gs-on-accent)}
+.gsb.gsb-theme-light .gsb-rule-remove{color:var(--_gs-muted)!important}
+.gsb.gsb-theme-light .gsb-rule-remove:hover{color:#fff!important}
+.gsb.gsb-theme-light .gsb-option.include .gsb-tristate{background:#dcfce7;color:#166534}
+.gsb.gsb-theme-light .gsb-option.exclude .gsb-tristate{background:#ffe4e6;color:#9f1239}
+
+/* v2.1: semantic token coverage for controls, rules, and popovers (both presets). */
+.gsb .gsb-panel-button,.gsb .gsb-filter-trigger,.gsb .gsb-filter-field>select,.gsb .gsb-rule-token,.gsb .gsb-range-inputs input{background:var(--_gs-control);color:var(--_gs-text);border-color:var(--_gs-border-strong)}
+.gsb .gsb-rule-box,.gsb .gsb-advanced,.gsb .gsb-search-line{background:var(--_gs-bg)}
+.gsb .gsb-menu,.gsb .gsb-suggestions{background:var(--_gs-popover);color:var(--_gs-text)}
+.gsb .gsb-panel-button.gsb-open,.gsb .gsb-group,.gsb .gsb-expanded-item{background:var(--_gs-accent-soft)}
+.gsb .gsb-panel-button:hover,.gsb .gsb-option:hover,.gsb .gsb-filter-trigger:hover,.gsb .gsb-group:hover{background:var(--_gs-accent-hover)}
+.gsb .gsb-rule-icon{background:color-mix(in srgb,var(--_gs-include) 18%,var(--_gs-surface));color:var(--_gs-include)}
+.gsb .gsb-excluded .gsb-rule-icon{background:color-mix(in srgb,var(--_gs-exclude) 18%,var(--_gs-surface));color:var(--_gs-exclude)}
+.gsb .gsb-group-field,.gsb .gsb-rule-move small,.gsb .gsb-suggestion-copy small{color:var(--_gs-muted)}
+.gsb .gsb-shortcut{background:var(--_gs-accent-soft);color:var(--_gs-muted);border-color:var(--_gs-border)}
+.gsb .gsb-search-button,.gsb .gsb-modes button.gsb-active{background:var(--_gs-accent);color:var(--_gs-on-accent)}
+.gsb .gsb-search-line input::placeholder,.gsb .gsb-menu>input::placeholder{color:var(--gs-placeholder,var(--_gs-muted))}
+.gsb .gsb-more,.gsb .gsb-clear-field{border-top-color:var(--_gs-border);color:var(--_gs-accent)}
+.gsb .gsb-range-error{color:var(--_gs-exclude)}

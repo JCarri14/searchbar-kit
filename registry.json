@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "searchbarkit",
+  "homepage": "https://github.com/OWNER/searchbar-kit",
+  "items": [
+    {
+      "name": "searchbar",
+      "type": "registry:block",
+      "title": "SearchbarKit — React SearchBar",
+      "description": "Accessible, controlled Simple, Filtered and Advanced SearchBars, with numeric ranges, rules, query state and CSS tokens. Source files are yours to edit.",
+      "dependencies": ["lucide-react", "motion"],
+      "files": [
+        {"path":"registry/searchbar.tsx","type":"registry:ui","target":"@ui/searchbar.tsx"},
+        {"path":"registry/searchbar.types.ts","type":"registry:ui","target":"@ui/searchbar.types.ts"},
+        {"path":"registry/searchbar.core.ts","type":"registry:ui","target":"@ui/searchbar.core.ts"},
+        {"path":"registry/searchbar.core.types.ts","type":"registry:ui","target":"@ui/searchbar.core.types.ts"},
+        {"path":"registry/searchbar.core.query-core.ts","type":"registry:ui","target":"@ui/searchbar.core.query-core.ts"},
+        {"path":"registry/searchbar.core.url-state.ts","type":"registry:ui","target":"@ui/searchbar.core.url-state.ts"},
+        {"path":"registry/searchbar.core.options.ts","type":"registry:ui","target":"@ui/searchbar.core.options.ts"},
+        {"path":"registry/searchbar.css","type":"registry:file","target":"@ui/searchbar.css"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - name: Require committed lockfile
+        run: pnpm lockfile:verify
+      - name: Install reproducibly
+        run: pnpm install --frozen-lockfile
+      - name: Run tests, types and builds
+        run: pnpm check
+      - name: Verify distributable exports
+        run: pnpm release:verify
+      - name: External installation smoke test
+        run: pnpm smoke:consumer

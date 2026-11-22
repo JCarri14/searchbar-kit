@@ -1,0 +1,40 @@
+{
+  "name": "@searchbarkit/web-component",
+  "version": "3.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepack": "pnpm run build"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/searchbar-element.js",
+      "default": "./dist/searchbar-element.js"
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "@searchbarkit/core": "workspace:*",
+    "@searchbarkit/react": "workspace:*",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "main": "./dist/searchbar-element.js",
+  "module": "./dist/searchbar-element.js",
+  "types": "./dist/types/index.d.ts",
+  "sideEffects": true
+}
